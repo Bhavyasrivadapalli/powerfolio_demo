@@ -9,7 +9,7 @@ export default function Home() {
   const fetchProjects = async () => {
     try {
       const res = await API.get(
-        `/projects?search=${search}&tech=${tech}`
+        `/api/projects?search=${search}&tech=${tech}`
       );
       setProjects(res.data);
     } catch (err) {

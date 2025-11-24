@@ -23,7 +23,7 @@ export default function AddProject() {
         techStack: form.techStack.split(","),
       };
 
-      await API.post("/projects", payload);
+      await API.post("/api/projects", payload);
       navigate("/dashboard");
     } catch (err) {
       alert("Failed to add project");

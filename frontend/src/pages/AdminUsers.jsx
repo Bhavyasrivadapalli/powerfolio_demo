@@ -8,7 +8,7 @@ export default function AdminUsers() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await API.get("/admin/users");
+        const res = await API.get("/api/admin/users");
         setUsers(res.data);
       } catch (err) {
         console.error("Failed to load users");

@@ -16,7 +16,7 @@ export default function AdminAnalytics() {
   useEffect(() => {
     const fetchAnalytics = async () => {
       try {
-        const res = await API.get("/admin/analytics");
+        const res = await API.get("/api/admin/analytics");
         setStats(res.data);
       } catch (err) {
         console.error("Analytics load failed");

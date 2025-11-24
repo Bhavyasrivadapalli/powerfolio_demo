@@ -11,7 +11,7 @@ export default function Analytics() {
 
   const fetchSummary = async () => {
     try {
-      const res = await API.get("/analytics/summary", {
+      const res = await API.get("/api/analytics/summary", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

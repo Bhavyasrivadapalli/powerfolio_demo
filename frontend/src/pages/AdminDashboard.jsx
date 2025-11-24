@@ -6,7 +6,7 @@ export default function AdminDashboard() {
 
   const fetchProjects = async () => {
     try {
-      const res = await API.get("/admin/projects");
+      const res = await API.get("/api/admin/projects");
       setProjects(res.data);
     } catch (err) {
       console.error("Admin project load failed");
